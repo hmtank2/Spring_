@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<context:annotation-config/>
+	
+	<bean id = "cat1" class = "com.dto.Cat">
+		<property name = "username" value = "야옹이"/>
+		<property name = "age" value = "12"/>
+	</bean>
+	<bean id = "cat2" class = "com.dto.Cat">
+		<property name = "username" value = "망치"/>
+		<property name = "age" value = "9"/>
+	</bean>
+	
+	<bean id = "p" class = "com.dto.person">
+		<property name = "username" value = "홍길동"/>
+	</bean>
+
+</beans>
